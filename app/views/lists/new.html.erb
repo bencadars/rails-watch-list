@@ -1,0 +1,14 @@
+<div class="container mt-4">
+  <div class="list-form">
+    <%= simple_form_for @list do |f| %>
+      <div class="form-group">
+        <%= f.label :name, class: "form-label" %>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+      <div class="form-actions">
+        <%= f.submit "Create a list", class: "btn btn-primary mt-2" %>
+      </div>
+    <% end %>
+    <%= link_to "Back to All Movie Lists", lists_path, class: "btn btn-secondary mt-4" %>
+  </div>
+</div>

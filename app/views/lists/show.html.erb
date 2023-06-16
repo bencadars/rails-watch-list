@@ -1,0 +1,10 @@
+<div class= "container mt-4">
+<p><%= @list.name %></p>
+<p><%= link_to "Back to All Movie List", lists_path, class: "btn btn-secondary mt-4" %></p>
+<p><%= link_to "Add a movie", new_list_bookmark_path(@list) %></p>
+</div>
+
+
+<%# Ajouter un bouton Add a movie qui redirige vers le path new_bookmark %>
+  <%# Afficher tous les movies (sauf ceux qui sont déjà bookmarkés) %>
+  <%# permettre de bookmarker ce movie et de mettre un commentaire %>
